@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import org.json.simple.*;
@@ -80,7 +81,7 @@ public class hw_13 {
 
             // task 2
             System.out.println("Task 2");
-            String fileDir = "F://";
+            String fileDir = System.getProperty("user.dir")+ File.separator;
             getCommentsOnLastPostForUserId (1, fileDir);
 
             // task 3
